@@ -155,6 +155,9 @@ func RemoveCurrentEndPoint(nextServer *EndPoint) *EndPoint {
 		curr = curr.Next
 	}
 	prev.Next = nextServer.Next
+	if end == nextServer {
+		end = prev
+	}
 	nextServer.Next = nil
 
 	return prev

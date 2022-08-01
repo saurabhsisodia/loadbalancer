@@ -53,6 +53,7 @@ func Get(rw http.ResponseWriter, r *http.Request) {
 
 	curr := start
 	urls := []URL{}
+
 	for curr != nil {
 
 		urls = append(urls, NewURL(curr.URL))
