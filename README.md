@@ -9,6 +9,8 @@
 
 ## How to use this Load Balancer
 
+- **make sure you are using correct client to send HTTP requests(POST,GET,DELETE)**
+
 - make **POST** request using postman or any client to **localhost:8080/urls/register** to register your URLs in LB
   - Request body should be array of urls
   ```
