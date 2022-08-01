@@ -14,6 +14,7 @@ func Handlers() *mux.Router {
 	r.HandleFunc("/proxy", handlers.Proxy)
 
 	r.HandleFunc("/urls/get", handlers.Get)
+	r.HandleFunc("/urls/delete", handlers.Delete).Methods("DELETE")
 
 	return r
 

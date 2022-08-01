@@ -70,3 +70,14 @@ func Get(rw http.ResponseWriter, r *http.Request) {
 	}
 
 }
+
+func Delete(rw http.ResponseWriter, r *http.Request) {
+	start = nil
+	end = nil
+	nextServer = nil
+
+	for k, _ := range mp {
+		delete(mp, k)
+	}
+
+}

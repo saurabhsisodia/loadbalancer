@@ -22,6 +22,7 @@
   ```
 - make HTTP request to **localhost:8080/proxy** to get response from one of the registered healthy Endpoint in Round Robin fashion
 - make **GET** request to **localhost:8080/urls/get** to get all the registered URLs in your LB which are healthy.
+- make **DELETE** request to **localhost:8080/urls/delete** to delete all registered Endpoints in LB
 
 ## Use deployed version of this application in Heroku
 
@@ -40,4 +41,5 @@
   ```
 - make HTTP request to **https://sisodias-loadbalancer.herokuapp.com/proxy** to get response from one of the registered healthy Endpoint in Round Robin fashion
 - make **GET** request to **https://sisodias-loadbalancer.herokuapp.com/urls/get** to get all the registered Endpoint which are healthy.
+- make **DELETE** request to **https://sisodias-loadbalancer.herokuapp.com/urls/delete** to delete all registered Endpoints in LB
 
